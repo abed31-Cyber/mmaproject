@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "MMA Universe",
+    "slug": "mma-universe",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "scheme": "mmauniverse",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B0B0D"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mmauniverse.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cette application utilise la caméra pour les photos de profil et les posts.",
+        "NSPhotoLibraryUsageDescription": "Cette application accède à vos photos pour les posts et le profil."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon-foreground.png",
+        "backgroundImage": "./src/assets/images/adaptive-icon-background.png",
+        "backgroundColor": "#0B0B0D"
+      },
+      "package": "com.mmauniverse.app",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./src/assets/images/notification-icon.png",
+          "color": "#C72C2C"
+        }
+      ]
+    ]
+  }
+}
